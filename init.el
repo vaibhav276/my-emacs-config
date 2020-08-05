@@ -12,6 +12,7 @@
 ; Apply package configs
 (require 'evil-config)
 
-; Font and colors
+; General editor config
 (set-face-attribute 'default nil :family "Monaco" :height 110)
 (load-theme 'sanityinc-solarized-light)
+(show-paren-mode t)

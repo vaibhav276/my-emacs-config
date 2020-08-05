@@ -17,7 +17,8 @@
 
 ; list the packages you want
 (setq package-list
-   '(color-theme-sanityinc-solarized evil use-package))
+      '(color-theme-sanityinc-solarized evil use-package
+	company))
 
 ; activate all the packages
 (package-initialize)
