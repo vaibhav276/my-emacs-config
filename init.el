@@ -37,6 +37,10 @@
 (require 'ivy-config)
 (require 'org-config)
 
+(require 'smex-config)
+(require 'hydra-config)
+(require 'which-key-config)
+
 (require 'my-keyboard-shortcuts)
 
 ; General editor config
