@@ -40,6 +40,7 @@
 (require 'hydra-config)
 (require 'which-key-config)
 (require 'general-config)
+
 (require 'my-keyboard-shortcuts)
 
 ; General editor config
@@ -47,6 +48,7 @@
 (load-theme 'sanityinc-solarized-light)
 (show-paren-mode t)
 (setq default-buffer-file-coding-system 'utf-8-unix)
+(recentf-mode 1)
 
 ; Custom functions
 (defun dos2unix ()

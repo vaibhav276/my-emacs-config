@@ -1,5 +1,6 @@
 ; dependencies: evil, hydra, which-key, general
 
+(message "Loading my-keyboard-shortcuts...")
 (evil-set-leader 'normal (kbd "<SPC>"))
 
 (general-define-key
@@ -45,4 +46,5 @@
   ("g" text-scale-increase "in")
   ("l" text-scale-decrease "out"))
 
+(message "Loaded my-keyboard-shortcuts...")
 (provide 'my-keyboard-shortcuts)
