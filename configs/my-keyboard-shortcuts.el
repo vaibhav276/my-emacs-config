@@ -24,6 +24,7 @@
 ; Buffer
 (which-key-declare-prefixes "<leader>b" "buffer")
 (my-leader-def
+  "TAB" 'evil-switch-to-windows-last-buffer
   "bb" 'switch-to-buffer
   "bd" 'kill-this-buffer
   )

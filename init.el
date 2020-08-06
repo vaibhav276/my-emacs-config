@@ -44,7 +44,7 @@
 (require 'my-keyboard-shortcuts)
 
 ; General editor config
-(set-face-attribute 'default nil :family "Monaco" :height 110)
+(set-face-attribute 'default nil :family "Meslo LG L DZ" :height 120)
 (load-theme 'sanityinc-solarized-light)
 (show-paren-mode t)
 (setq default-buffer-file-coding-system 'utf-8-unix)
