@@ -36,14 +36,31 @@
 (require 'company-config)
 (require 'ivy-config)
 (require 'org-config)
-
 (require 'smex-config)
 (require 'hydra-config)
 (require 'which-key-config)
-
+(require 'general-config)
 (require 'my-keyboard-shortcuts)
 
 ; General editor config
 (set-face-attribute 'default nil :family "Monaco" :height 110)
 (load-theme 'sanityinc-solarized-light)
 (show-paren-mode t)
+(setq default-buffer-file-coding-system 'utf-8-unix)
+
+; Custom functions
+(defun dos2unix ()
+  "Convert a DOS formatted text buffer to UNIX format"
+  (interactive)
+  (set-buffer-file-coding-system 'undecided-unix nil))
+
+(defun unix2dos ()
+  "Convert a UNIX formatted text buffer to DOS format"
+  (interactive)
+  (set-buffer-file-coding-system 'undecided-dos nil))
+
+; Trying to make git respond faster (probably not helping)
+(if (eq system-type 'windows-nt)
+    (progn
+      (setq exec-path (add-to-list 'exec-path "C:/Program Files/Git/bin"))
+      (setenv "PATH" (concat "C:\\Program Files\\Git\\bin;" (getenv "PATH")))))
