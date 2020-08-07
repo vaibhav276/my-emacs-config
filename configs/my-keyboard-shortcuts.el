@@ -40,6 +40,11 @@
   "gg" 'magit-status
   )
 
+(which-key-declare-prefixes "<leader>h" "misc")
+(my-leader-def
+  "ht" 'load-theme
+  )
+
 ; Hydras
 (which-key-declare-prefixes "<leader>z" "zoom")
 (defhydra hydra-zoom (global-map "<leader>z")
