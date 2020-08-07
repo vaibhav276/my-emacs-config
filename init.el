@@ -43,24 +43,15 @@
 (require 'general-config)
 
 (require 'my-keyboard-shortcuts)
+(require 'my-custom-functions)
 
 ; General editor config
 (set-face-attribute 'default nil :family "Meslo LG L DZ" :height 120)
-(load-theme 'sanityinc-solarized-light)
+(load-theme 'sanityinc-tomorrow-blue)
 (show-paren-mode t)
 (setq default-buffer-file-coding-system 'utf-8-unix)
 (recentf-mode 1)
-
-; Custom functions
-(defun dos2unix ()
-  "Convert a DOS formatted text buffer to UNIX format"
-  (interactive)
-  (set-buffer-file-coding-system 'undecided-unix nil))
-
-(defun unix2dos ()
-  "Convert a UNIX formatted text buffer to DOS format"
-  (interactive)
-  (set-buffer-file-coding-system 'undecided-dos nil))
+(setq confirm-kill-emacs 'y-or-n-p)
 
 ; Trying to make git respond faster (probably not helping)
 (if (eq system-type 'windows-nt)
