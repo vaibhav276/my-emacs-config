@@ -12,16 +12,9 @@
  "C-c C-k" 'with-editor-cancel
  )
 
-; Leader oriented commands
+;;;;;;;;;; Leader oriented commands - Start ;;;;;;;;;;
 (general-create-definer my-leader-def
   :prefix "<leader>")
-
-; File
-(which-key-declare-prefixes "<leader>f" "file")
-(my-leader-def
-  "ff" 'find-file
-  "fr" 'recentf-open-files
-  )
 
 ; Buffer
 (which-key-declare-prefixes "<leader>b" "buffer")
@@ -31,20 +24,37 @@
   "bd" 'kill-this-buffer
   )
 
+; File
+(which-key-declare-prefixes "<leader>f" "file")
+(my-leader-def
+  "ff" 'find-file
+  "fr" 'recentf-open-files
+  )
+
+; Git
+(which-key-declare-prefixes "<leader>g" "git")
+(my-leader-def
+  "gg" 'magit-status
+  )
+
+; Misc
+(which-key-declare-prefixes "<leader>h" "misc")
+(my-leader-def
+  "ht" 'load-theme
+  )
+
 ; Quit
 (which-key-declare-prefixes "<leader>q" "quit")
 (my-leader-def
   "qq" 'save-buffers-kill-terminal
   )
 
-(which-key-declare-prefixes "<leader>g" "git")
+; Window
+(which-key-declare-prefixes "<leader>w" "window")
 (my-leader-def
-  "gg" 'magit-status
-  )
-
-(which-key-declare-prefixes "<leader>h" "misc")
-(my-leader-def
-  "ht" 'load-theme
+  "wd" 'evil-window-delete
+  "ws" 'evil-window-split
+  "wv" 'evil-window-vsplit
   )
 
 ; Hydras
@@ -53,6 +63,8 @@
   "zoom"
   ("g" text-scale-increase "in")
   ("l" text-scale-decrease "out"))
+
+;;;;;;;;;; Leader oriented commands - End ;;;;;;;;;;
 
 (message "Loaded my-keyboard-shortcuts...")
 (provide 'my-keyboard-shortcuts)
