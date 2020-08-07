@@ -8,6 +8,8 @@
  "M-X" 'smex-major-mode-commands
  "M-<SPC>" 'company-complete
  "C-c C-c M-x" 'execute-extended-command
+ "C-c ," 'with-editor-finish
+ "C-c C-k" 'with-editor-cancel
  )
 
 ; Leader oriented commands
