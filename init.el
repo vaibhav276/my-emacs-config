@@ -31,6 +31,7 @@
 (add-to-list 'load-path "~/.emacs.d/configs/")
 (require 'evil-config)
 (require 'sanityinc-solarized-config)
+(require 'sanityinc-tomorrow-config)
 (require 'magit-config)
 (require 'evil-magit-config)
 (require 'company-config)
