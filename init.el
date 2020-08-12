@@ -60,5 +60,7 @@
 (if (eq system-type 'windows-nt)
     (progn
       (setq exec-path (add-to-list 'exec-path "C:/Program Files/Git/bin"))
-      (setenv "PATH" (concat "C:\\Program Files\\Git\\bin;" (getenv "PATH")))))
-(setenv "GIT_ASKPASS" "git-gui--askpass")
+      (setenv "PATH" (concat "C:\\Program Files\\Git\\bin;" (getenv "PATH")))
+      (setenv "GIT_ASKPASS" "git-gui--askpass")
+      )
+  )
