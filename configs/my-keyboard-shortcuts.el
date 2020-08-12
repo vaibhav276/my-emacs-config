@@ -27,7 +27,7 @@
 ; Directories
 (which-key-declare-prefixes "<leader>d" "directory")
 (my-leader-def
-  "dd" 'counsel-cd
+  "dd" 'cd
   "de" 'dired
   )
 
