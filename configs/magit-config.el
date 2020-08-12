@@ -1,6 +1,6 @@
 (use-package magit
   :straight t
-  :defer t
+  :defer 1
   :init
   (message "Loading magit...")
   :config

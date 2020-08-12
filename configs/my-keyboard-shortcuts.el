@@ -20,8 +20,15 @@
 (which-key-declare-prefixes "<leader>b" "buffer")
 (my-leader-def
   "TAB" 'evil-switch-to-windows-last-buffer
-  "bb" 'switch-to-buffer
+  "bb" 'counsel-switch-buffer
   "bd" 'kill-this-buffer
+  )
+
+; Directories
+(which-key-declare-prefixes "<leader>d" "directory")
+(my-leader-def
+  "dd" 'counsel-cd
+  "de" 'dired
   )
 
 ; File
@@ -47,6 +54,12 @@
 (which-key-declare-prefixes "<leader>q" "quit")
 (my-leader-def
   "qq" 'save-buffers-kill-terminal
+  )
+
+; Source code
+(which-key-declare-prefixes "<leader>s" "source")
+(my-leader-def
+  "ss" 'swiper
   )
 
 ; Window

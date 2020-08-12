@@ -53,9 +53,12 @@
 (setq default-buffer-file-coding-system 'utf-8-unix)
 (recentf-mode 1)
 (setq confirm-kill-emacs 'y-or-n-p)
+(column-number-mode 1)
+(toggle-frame-maximized)
 
 ; Trying to make git respond faster (probably not helping)
 (if (eq system-type 'windows-nt)
     (progn
       (setq exec-path (add-to-list 'exec-path "C:/Program Files/Git/bin"))
       (setenv "PATH" (concat "C:\\Program Files\\Git\\bin;" (getenv "PATH")))))
+(setenv "GIT_ASKPASS" "git-gui--askpass")
