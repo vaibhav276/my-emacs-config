@@ -44,6 +44,7 @@
 (require 'git-gutter-config)
 (require 'projectile-config)
 (require 'yasnippet-config)
+(require 'ox-hugo-config)
 
 (require 'my-keyboard-shortcuts)
 (require 'my-custom-functions)
