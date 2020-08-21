@@ -50,6 +50,12 @@
   "ht" 'load-theme
   )
 
+;Projectile
+(which-key-declare-prefixes "<leader>p" "project")
+(my-leader-def
+  "p" 'projectile-command-map
+  )
+
 ; Quit
 (which-key-declare-prefixes "<leader>q" "quit")
 (my-leader-def

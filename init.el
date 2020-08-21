@@ -42,6 +42,8 @@
 (require 'which-key-config)
 (require 'general-config)
 (require 'git-gutter-config)
+(require 'projectile-config)
+(require 'yasnippet-config)
 
 (require 'my-keyboard-shortcuts)
 (require 'my-custom-functions)
