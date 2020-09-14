@@ -45,6 +45,7 @@
 (require 'projectile-config)
 (require 'yasnippet-config)
 (require 'ox-hugo-config)
+(require 'ox-minutes-config)
 
 (require 'my-keyboard-shortcuts)
 (require 'my-custom-functions)
