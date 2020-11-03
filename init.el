@@ -45,6 +45,7 @@
 (require 'projectile-config)
 (require 'yasnippet-config)
 (require 'ox-minutes-config)
+(require 'dante-config)
 
 (require 'my-keyboard-shortcuts)
 (require 'my-custom-functions)
@@ -59,7 +60,7 @@
 (column-number-mode 1)
 (toggle-frame-maximized)
 
-; Trying to make git respond faster (probably not helping)
+; Trying to make git respond faster on windows
 (if (eq system-type 'windows-nt)
     (progn
       (setq exec-path (add-to-list 'exec-path "C:/Program Files/Git/bin"))
