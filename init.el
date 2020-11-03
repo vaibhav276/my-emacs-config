@@ -46,6 +46,7 @@
 (require 'yasnippet-config)
 (require 'ox-minutes-config)
 (require 'dante-config)
+(require 'ledger-config)
 
 (require 'my-keyboard-shortcuts)
 (require 'my-custom-functions)
