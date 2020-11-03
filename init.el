@@ -1,10 +1,11 @@
-; Basic GUI cleanup
+;; Basic GUI cleanup
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (setq visible-bell 0)
 (blink-cursor-mode 0)
 
+;; Package manager
 ; Install straight.el package manager
 ; (make sure not to use default package manager now)
 (defvar bootstrap-version)
@@ -27,8 +28,11 @@
 (setq custom-file (concat user-emacs-directory "custom-variables.el"))
 (load-file custom-file)
 
+;; Packages
 ; Load and configure packages
 (add-to-list 'load-path "~/.emacs.d/configs/")
+
+; general packages
 (require 'evil-config)
 (require 'sanityinc-solarized-config)
 (require 'sanityinc-tomorrow-config)
@@ -45,13 +49,16 @@
 (require 'projectile-config)
 (require 'yasnippet-config)
 (require 'ox-minutes-config)
-(require 'dante-config)
-(require 'ledger-config)
 
+; speed maps
 (require 'my-keyboard-shortcuts)
 (require 'my-custom-functions)
 
-; General editor config
+; development environment packages (maybe external dependencies)
+(require 'dante-config) ; requires ghc, ghci
+(require 'ledger-config) ; requires ledger
+
+;; General editor config
 (set-face-attribute 'default nil :family "Meslo LG L DZ" :height 120)
 (load-theme 'sanityinc-tomorrow-blue)
 (show-paren-mode t)
@@ -61,6 +68,7 @@
 (column-number-mode 1)
 (toggle-frame-maximized)
 
+;; Hacks
 ; Trying to make git respond faster on windows
 (if (eq system-type 'windows-nt)
     (progn
