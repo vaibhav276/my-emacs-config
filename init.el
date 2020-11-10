@@ -58,6 +58,7 @@
 ; development environment packages (maybe external dependencies)
 (require 'dante-config) ; requires ghc, ghci
 (require 'ledger-config) ; requires ledger
+(require 'rjsx-config)
 
 ;; General editor config
 (set-face-attribute 'default nil :family "Meslo LG L DZ" :height 120)
