@@ -36,6 +36,7 @@
 (require 'evil-config)
 (require 'sanityinc-solarized-config)
 (require 'sanityinc-tomorrow-config)
+(require 'monokai-config)
 (require 'magit-config)
 (require 'evil-magit-config)
 (require 'company-config)
@@ -60,7 +61,7 @@
 
 ;; General editor config
 (set-face-attribute 'default nil :family "Meslo LG L DZ" :height 120)
-(load-theme 'sanityinc-tomorrow-blue)
+(load-theme 'monokai)
 (show-paren-mode t)
 (setq default-buffer-file-coding-system 'utf-8-unix)
 (recentf-mode 1)
