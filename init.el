@@ -55,10 +55,11 @@
 (require 'my-keyboard-shortcuts)
 (require 'my-custom-functions)
 
-; development environment packages (maybe external dependencies)
-(require 'dante-config) ; requires ghc, ghci
-(require 'ledger-config) ; requires ledger
-(require 'rjsx-config)
+;; development environment packages (maybe external dependencies)
+; (require 'dante-config)          ; depends on ghc, ghci
+; (require 'ledger-config)         ; depends on ledger
+; (require 'rjsx-config)
+; (require 'gnuglobal-config)      ; depends on gnu global
 
 ;; General editor config
 (set-face-attribute 'default nil :family "Meslo LG L DZ" :height 120)
