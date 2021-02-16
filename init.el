@@ -54,6 +54,7 @@
 (require 'projectile-config)
 (require 'yasnippet-config)
 (require 'ox-minutes-config)
+(require 'diminish-config)
 
 ; speed maps
 (require 'my-keyboard-shortcuts)
