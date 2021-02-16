@@ -1,9 +1,13 @@
 ;; Basic GUI cleanup
 (tool-bar-mode -1)
-(menu-bar-mode -1)
-(scroll-bar-mode -1)
 (setq visible-bell 0)
 (blink-cursor-mode 0)
+(if (eq system-type 'windows-nt)
+    (progn
+      (scroll-bar-mode -1)
+      (menu-bar-mode -1)
+      )
+  )
 
 ;; Package manager
 ; Install straight.el package manager
