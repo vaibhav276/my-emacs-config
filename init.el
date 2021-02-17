@@ -55,6 +55,7 @@
 (require 'yasnippet-config)
 (require 'ox-minutes-config)
 (require 'diminish-config)
+(require 'ranger-config)
 
 ; speed maps
 (require 'my-keyboard-shortcuts)

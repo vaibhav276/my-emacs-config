@@ -29,6 +29,7 @@
 (my-leader-def
   "dd" 'cd
   "de" 'dired
+  "dr" 'ranger
   )
 
 ; File
