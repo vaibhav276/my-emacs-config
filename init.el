@@ -2,7 +2,13 @@
 (tool-bar-mode -1)
 (setq visible-bell 0)
 (blink-cursor-mode 0)
-(if (eq system-type 'windows-nt)
+; (if (eq system-type 'windows-nt)
+;     (progn
+;       (scroll-bar-mode -1)
+;       (menu-bar-mode -1)
+;       )
+;   )
+(when window-system
     (progn
       (scroll-bar-mode -1)
       (menu-bar-mode -1)
