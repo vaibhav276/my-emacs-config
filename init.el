@@ -1,11 +1,11 @@
 ;; Basic GUI cleanup
-(tool-bar-mode -1)
 (setq visible-bell 0)
 (blink-cursor-mode 0)
-(if (eq system-type 'windows-nt)
-    (progn
+(menu-bar-mode -1)
+(if window-system
+  (progn
       (scroll-bar-mode -1)
-      (menu-bar-mode -1)
+      (tool-bar-mode -1)
       )
   )
 
