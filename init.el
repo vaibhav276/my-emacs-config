@@ -66,6 +66,7 @@
 ; (require 'ledger-config)         ; depends on ledger
 ; (require 'rjsx-config)
 ; (require 'gnuglobal-config)      ; depends on gnu global
+; (require 'nix-config)
 
 ;; General editor config
 (set-face-attribute 'default nil :family "Meslo LG L DZ" :height 120)
