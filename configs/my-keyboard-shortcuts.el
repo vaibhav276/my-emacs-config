@@ -67,6 +67,7 @@
 (which-key-declare-prefixes "<leader>s" "source")
 (my-leader-def
   "ss" 'swiper
+  "sj" 'imenu
   )
 
 ; Window

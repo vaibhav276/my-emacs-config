@@ -8,4 +8,16 @@
   (interactive)
   (set-buffer-file-coding-system 'undecided-dos nil))
 
+(defun set-mle-coding-style ()
+  (interactive)
+  (setq c-default-style "linux"
+        c-basic-offset 3
+        indent-tabs-mode nil))
+
+(defun set-td-coding-style ()
+  (interactive)
+  (setq c-default-style "linux"
+        c-basic-offset 4
+        indent-tabs-mode nil))
+
 (provide 'my-custom-functions)
